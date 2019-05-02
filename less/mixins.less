@@ -5,3 +5,21 @@
     text-decoration: none;
 }
 
+.btn-class(@color) {
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: @color;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 70%;
+    cursor: pointer;
+    a {
+        text-decoration: none;
+    }
+  
+    &:hover { 
+      background-color: darken(@color, 5%)
+    }
+  }
