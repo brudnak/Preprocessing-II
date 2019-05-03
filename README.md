@@ -1,5 +1,9 @@
 # Student: Anderw Brudnak
 
+# [Deployed Here](https://brud-pre-2.netlify.com/) 🚀
+
+![Site on Mobile Device](https://i.imgur.com/JWhqUsa.png)
+
 # Preprocessing II: Fun Bus Website
 
 Fun Bus is a travel agency looking for some help on their website.  They want a new navigation, new header, and new buttons on the home page. They also want a mobile version of their site styled.  Use your preprocessing knowledge to accomplish their tasks.
@@ -37,8 +41,6 @@ Follow these steps for completing your project.
 5. `navigation.less`
 6. `footer.less`
 7. `home-page.less`
-
-<video src="https://biteable.com/watch/andrew-brudnak-2-2251138" width="320" height="200" controls preload></video>
 
 ## Task 4: Desktop Updates Needed
 * [x] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
