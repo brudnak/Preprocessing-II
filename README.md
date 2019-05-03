@@ -38,6 +38,7 @@ Follow these steps for completing your project.
 6. `footer.less`
 7. `home-page.less`
 
+<video src="https://biteable.com/watch/andrew-brudnak-2-2251138" width="320" height="200" controls preload></video>
 
 ## Task 4: Desktop Updates Needed
 * [x] Review the [desktop design file](design-files/fun-bus-desktop.png).  Notice the navigation, header, and buttons at the bottom of the page are missing.
