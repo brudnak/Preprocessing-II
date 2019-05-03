@@ -1,26 +1,31 @@
-// Navigation Styles here
+// // Navigation Styles here
 
-.main-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    border-bottom: 2px dashed @silver;
-    max-width: 980px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px 90px 25px;
-    a {
-        .anchor-reset();
-        font-size: 1.6rem;
-        padding: 0px 30px;
-    }
-    h1 {
-        width: 20%;
-    }
-    nav {
-        width: 80%;
-        display: flex;
-        justify-content: flex-end;
-        align-content: center;
-    }
-}
+.exterior-navigation {
+    .dashed-silver-bottom();
+	.interior-navigation {
+        .interior-navigation-setup();
+        padding: 15px 20px 40px;
+		@media @mobile {
+		    h1, nav {
+			    width: 100%;
+				text-align: center;
+			} // end of h1, nav selector
+		} // end of mobile query
+    } // end of interior-navigation
+    
+	nav {
+		@media @mobile {
+			margin: 18px 0;
+		} // end of mobile query
+    } // end of nav selector
+    
+	a {
+        color: @colors[shark];
+        font-size: 1.9rem;
+        padding: 28px 12px;
+        text-decoration: none;
+		@media @mobile {
+            padding: 10px;
+		} // end of mobile query
+	} // end of anchor element selector
+} // end of exterior-navigation

@@ -1,3 +1,14 @@
+.dashed-silver-bottom {
+  border-bottom: 2px dashed #c0c0c0;
+}
+.interior-navigation-setup {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -168,35 +179,45 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.main-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
-  max-width: 980px;
-  width: 100%;
+.exterior-navigation {
+  border-bottom: 2px dashed #c0c0c0;
+}
+.exterior-navigation .interior-navigation {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 10px 90px 25px;
-}
-.main-nav a {
-  color: #000;
-  text-decoration: none;
-  font-size: 1.6rem;
-  padding: 0px 30px;
-}
-.main-nav h1 {
-  width: 20%;
-}
-.main-nav nav {
-  width: 80%;
   display: flex;
-  justify-content: flex-end;
-  align-content: center;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px 40px;
+}
+@media (max-width: 500px) {
+  .exterior-navigation .interior-navigation h1,
+  .exterior-navigation .interior-navigation nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .exterior-navigation nav {
+    margin: 18px 0;
+  }
+}
+.exterior-navigation a {
+  color: #212529;
+  font-size: 1.9rem;
+  padding: 28px 12px;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  .exterior-navigation a {
+    padding: 10px;
+  }
 }
 .footer {
   width: 100%;
-  border-top: 2px dashed silver;
-  background: #FFEBCD;
+  border-top: 2px dashed #c0c0c0;
+  background: #ffebcd;
 }
 .footer p {
   text-align: center;
@@ -211,7 +232,7 @@ img {
   margin: 0;
   padding: 10px 30px;
   border-radius: 10px;
-  background-color: #17A2B8;
+  background-color: #17a2b8;
   color: white;
   text-align: center;
   font-size: 1.3rem;
@@ -247,7 +268,7 @@ img {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #c0c0c0;
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -266,7 +287,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
