@@ -225,6 +225,12 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .footer p {
+    padding: 45px;
+    margin-bottom: 45px;
+  }
+}
 .home header {
   border-bottom: 2px dashed #c0c0c0;
 }
@@ -247,6 +253,12 @@ img {
 }
 .home .btn:hover {
   background-color: #148ea1;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 100%;
+    height: 50px;
+  }
 }
 .home a {
   color: #fff;
@@ -314,15 +326,48 @@ img {
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #c0c0c0;
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .content-pick .destination a {
+  margin: 0 auto;
+  height: 25px;
+  font-weight: bold;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination a {
+    margin: 0 auto;
+    height: 50px;
+    font-weight: bold;
+    font-size: 2rem;
+  }
 }
 @media (max-width: 500px) {
   .home {
