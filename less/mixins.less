@@ -1,1 +1,38 @@
 // Mixins in here
+
+.dashed-silver-bottom {
+  border-bottom: 2px dashed @colors[silver];
+}
+.anchor-reset(@color: #000) {
+    color: @color;
+    text-decoration: none;
+}
+
+.interior-navigation-setup {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-class(@color) {
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: @color;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 70%;
+    cursor: pointer;
+ 
+    a {
+        text-decoration: none;
+    }
+  
+    &:hover { 
+      background-color: darken(@color, 5%)
+    }
+  }
