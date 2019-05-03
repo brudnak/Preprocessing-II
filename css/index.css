@@ -225,6 +225,9 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home header {
+  border-bottom: 2px dashed #c0c0c0;
+}
 .home header h2 {
   margin-top: 20px;
 }
@@ -255,13 +258,34 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.home .content-section div #item {
+  order: 2;
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding-right: -1%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: -1%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -273,6 +297,11 @@ img {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    order: -1;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
@@ -294,4 +323,9 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home {
+    width: 90%;
+  }
 }
